@@ -295,11 +295,14 @@ span.material-symbols-rounded {
         margin-top: 10px;
         font-size: .7rem;
     }
-    
+
     .chat .chat-details p,
     .typing-animation {
-        min-width: 167px;
+        min-width: 220px;
     } 
+     .incoming  p {
+        width: 220px;
+    }
     .typing-contorols span {
         margin-right: 0px;
         width: 33px;
@@ -326,6 +329,9 @@ span.material-symbols-rounded {
     .typing-animation {
         min-width: 167px;
     } 
+    .incoming  p {
+        width: 167px;
+    }
     .typing-contorols span {
         margin-right: 0px;
         width: 33px;
@@ -343,7 +349,9 @@ span.material-symbols-rounded {
     .typing-animation {
         min-width: 90px;
     } 
-
+    .incoming  p {
+        width: 90px;
+    }
     .typing-contorols span {
         margin-right: 0px;
         width: 33px;
