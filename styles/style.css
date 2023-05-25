@@ -310,7 +310,9 @@ span.material-symbols-rounded {
     }
 }
 @media screen and (max-width: 280px) {
-   
+    .defult-text h1 {
+        font-size: 1.9rem;
+    }
     .chat .chat-details p,
     .typing-animation {
         min-width: 90px;
