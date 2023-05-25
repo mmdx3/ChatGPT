@@ -23,11 +23,15 @@ chatinput.addEventListener('keydown', (e) => {
 
 const loadDetaFromLocalStorage = () => {
     const themeColor = localStorage.getItem('theme');
-
-    document.body.classList.toggle('light_mode', themeColor === 'light_mode');
-    localStorage.setItem('theme', lightMOde.innerText);
-    lightMOde.innerHTML = document.body.classList.contains('light_mode') ? 'dark_mode' : 'light_mode';
-
+    if (localStorage.getItem('theme') === 'dark_mode') {
+        document.body.classList.remove('light_mode');
+        localStorage.setItem('theme', "dark_mode");
+        lightMOde.innerHTML = 'light_mode';
+    } else {
+        document.body.classList.add('light_mode');
+        localStorage.setItem('theme', "light_mode");
+        lightMOde.innerHTML = 'dark_mode';
+    }
     const defultText = `
         <div class="defult-text">
             <h1>چت جی پی تی ایرانی</h1>
@@ -44,10 +48,21 @@ const loadDetaFromLocalStorage = () => {
 loadDetaFromLocalStorage();
 
 lightMOde.addEventListener('click', () => {
-    document.body.classList.toggle('light_mode');
-    localStorage.setItem('theme', lightMOde.innerText);
-    lightMOde.innerHTML = document.body.classList.contains('light_mode') ? 'dark_mode' : 'light_mode';
-
+    if (localStorage.getItem('theme')) {
+        if (localStorage.getItem('theme') === 'light_mode') {
+            document.body.classList.remove('light_mode');
+            localStorage.setItem('theme', "dark_mode");
+            lightMOde.innerHTML = 'light_mode';
+        } else {
+            document.body.classList.add('light_mode');
+            localStorage.setItem('theme', "light_mode");
+            lightMOde.innerHTML = 'dark_mode';
+        }
+    }else {
+        document.body.classList.add('light_mode');
+        localStorage.setItem('theme', "light_mode");
+        lightMOde.innerHTML = 'dark_mode';
+    }
 })
 
 const getChatResponse = async (inComingChatDiv) => {

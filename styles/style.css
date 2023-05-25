@@ -30,6 +30,7 @@ body {
     background: var(--outgoing-chat-bg);
     scroll-behavior: smooth;
 }
+
 .defult-text {
     display: flex;
     align-items: center;
@@ -40,13 +41,16 @@ body {
     text-align: center;
     color: var(--text-color);
 }
+
 .defult-text h1 {
     font-size: 3.3rem;
 }
+
 .defult-text span {
     margin-top: 10px;
     font-size: 1.1rem;
 }
+
 .defult-text p {
     margin-top: 10px;
     font-size: 1.1rem;
@@ -218,9 +222,11 @@ span.material-symbols-rounded {
     padding: 15px 45px 15px 20px;
     overflow-y: auto;
 }
+
 .error {
     color: #e55865;
 }
+
 .typing-textarea span {
     visibility: hidden;
 }
@@ -249,7 +255,9 @@ span.material-symbols-rounded {
 }
 
 
-
+.chat .chat-details {
+    word-wrap: break-word;
+}
 .typing-contorols {
     display: flex;
 }
@@ -265,8 +273,9 @@ span.material-symbols-rounded {
 
     .chat .chat-details p,
     .typing-animation {
-        width: 368px;
-    } 
+        min-width: 368px;
+    }
+
     .typing-contorols span#delete-btn {
         margin-right: 20px;
     }
@@ -274,10 +283,12 @@ span.material-symbols-rounded {
 }
 
 @media screen and (max-width: 500px) {
+
     .chat .chat-details p,
     .typing-animation {
-        width: 350px;
-    } 
+        min-width: 350px;
+    }
+
     .typing-contorols span#delete-btn {
         margin-right: 20px;
     }
@@ -287,10 +298,12 @@ span.material-symbols-rounded {
     .defult-text h1 {
         font-size: 2.2rem;
     }
+
     .defult-text span {
         margin-top: 10px;
         font-size: 1rem;
     }
+
     .defult-text p {
         margin-top: 10px;
         font-size: .7rem;
@@ -298,11 +311,15 @@ span.material-symbols-rounded {
 
     .chat .chat-details p,
     .typing-animation {
-        width: 220px;
-    } 
-     .incoming  p {
+        min-width: 220px;
+    }
+    .outgoing p {
         width: 220px;
     }
+    .incoming p {
+        width: 220px;
+    }
+
     .typing-contorols span {
         margin-right: 0px;
         width: 33px;
@@ -312,26 +329,33 @@ span.material-symbols-rounded {
         margin-right: 20px;
     }
 }
+
 @media screen and (max-width: 350px) {
     .defult-text h1 {
         font-size: 2.2rem;
     }
+
     .defult-text span {
         margin-top: 10px;
         font-size: 1rem;
     }
+
     .defult-text p {
         margin-top: 10px;
         font-size: .7rem;
     }
-    
+
     .chat .chat-details p,
     .typing-animation {
-        width: 167px;
-    } 
-    .incoming  p {
+        min-width: 167px;
+    }
+    .outgoing p {
         width: 167px;
     }
+    .incoming p {
+        width: 167px;
+    }
+
     .typing-contorols span {
         margin-right: 0px;
         width: 33px;
@@ -341,17 +365,23 @@ span.material-symbols-rounded {
         margin-right: 20px;
     }
 }
+
 @media screen and (max-width: 280px) {
     .defult-text h1 {
         font-size: 1.9rem;
     }
+
     .chat .chat-details p,
     .typing-animation {
-        width: 90px;
-    } 
-    .incoming  p {
+        min-width: 90px;
+    }
+    .outgoing p {
         width: 90px;
     }
+    .incoming p {
+        width: 90px;
+    }
+
     .typing-contorols span {
         margin-right: 0px;
         width: 33px;
