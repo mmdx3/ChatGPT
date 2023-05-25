@@ -309,3 +309,19 @@ span.material-symbols-rounded {
         margin-right: 20px;
     }
 }
+@media screen and (max-width: 280px) {
+   
+    .chat .chat-details p,
+    .typing-animation {
+        min-width: 90px;
+    } 
+
+    .typing-contorols span {
+        margin-right: 0px;
+        width: 33px;
+    }
+
+    .typing-contorols span#delete-btn {
+        margin-right: 20px;
+    }
+}
